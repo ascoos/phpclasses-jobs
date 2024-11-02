@@ -13,7 +13,7 @@ Unfortunately, the configuration in config.php has to be done manually, unless y
 
 Install the package in any folder within your Web page, as long as you include the following code in the HTML BODY, where you want it to appear.
 
-```
+``` php
     <div class="efp-template">
         <?php require_once([PATH]/'phpclasses-jobs.php'); ?>
     </div>
@@ -21,20 +21,21 @@ Install the package in any folder within your Web page, as long as you include t
 
 You should also make sure that the following are included in the HTML HEAD:
 
-```
+``` html
     <link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
     <script type="text/javascript" src="assets/js/jquery.js" charset="UTF-8"></script> 
 ```
 
 ## Configure the package
-````
-    libs/config.php
-````
+
+```php
+    ./libs/config.php
+```
 
 - Change the presets according to your needs.
 
-```
+``` php
         'lang'          => 'en',        // Current Language of package
         'show_title'    => true,        // Show Title in block element.
         'count'         => 10,			// How many jobs will be displayed.
